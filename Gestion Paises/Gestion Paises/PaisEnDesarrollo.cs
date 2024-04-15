@@ -8,7 +8,10 @@ namespace Gestion_Paises
 {
     internal class PaisEnDesarrollo
     {
+        public PaisEnDesarrollo(string, float, float, float, float,float)
+        {
 
+        }
 
 
     }
