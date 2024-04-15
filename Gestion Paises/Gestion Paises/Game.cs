@@ -33,7 +33,7 @@ namespace Gestion_Paises
                         }
                     case 2:
                         {
-                            GetSubdesarrollado();
+                            GetDesarrollo();
                             flag = false;
                             break;
                         }
@@ -50,11 +50,47 @@ namespace Gestion_Paises
                         }
                 }
             }
+
+            MenuGame();
         }
 
         void MenuGame()
         {
+            bool flag = true;
 
+            while (flag)
+            {
+                Console.WriteLine("Selecciona una opcion:");
+                Console.WriteLine("1. Ver las estadisticas del país");
+                Console.WriteLine("2. Modificar Impuestos");
+                Console.WriteLine("3. Pasar al siguiente turno");
+
+                int opt = int.Parse(Console.ReadLine());
+
+                switch (opt)
+                {
+                    case 1:
+                        {
+                            ViewStats();
+                            break;
+                        }
+                    case 2:
+                        {
+                            ChangeTaxes();
+                            break;
+                        }
+                    case 3:
+                        {
+                            PassTurn();
+                            break;
+                        }
+                    default:
+                        {
+                            Console.WriteLine("Opcion invalida");
+                            break;
+                        }
+                }
+            }
         }
         
         void ViewStats()
