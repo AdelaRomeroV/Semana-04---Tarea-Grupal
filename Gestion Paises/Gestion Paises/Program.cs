@@ -10,6 +10,8 @@ namespace Gestion_Paises
     {
         static void Main(string[] args)
         {
+            Game game = new Game();
+            game.SelectDifficul();
         }
     }
 }
