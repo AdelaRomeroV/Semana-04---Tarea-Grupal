@@ -8,16 +8,29 @@ namespace Gestion_Paises
 {
     internal class Pais
     {
-        float Impuestos;
-        float Poblacion;
-        float Dinero;
-        float Salud;
-        float Educacion;
-        float Seguridad;
-        float Felicidad;
-        float Gastos;
+        float impuestos;
+        float poblacion;
+        float dinero;
+        float salud;
+        float educacion;
+        float seguridad;
+        float felicidad;
+        float gastos;
 
         string NombreNivel;
+
+        public Pais (float impuestos, float poblacion, float dinero, float salud, float educacion, float seguridad, float felicidad, float gatos )
+        {
+            this.impuestos = impuestos; 
+            this.poblacion = poblacion;
+            this.dinero = dinero;
+            this.salud = salud;
+            this.educacion = educacion;
+            this.seguridad = seguridad;
+            this.felicidad = felicidad;
+            this.gastos = gatos;
+
+        }
 
         public void CalculateFactor()
         {
