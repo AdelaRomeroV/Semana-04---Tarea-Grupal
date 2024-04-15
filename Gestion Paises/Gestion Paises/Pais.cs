@@ -17,9 +17,9 @@ namespace Gestion_Paises
         float felicidad;
         float gastos;
 
-        string NombreNivel;
+        protected string NombreNivel;
 
-        public Pais (float impuestos, float poblacion, float dinero, float salud, float educacion, float seguridad, float felicidad, float gatos )
+        public Pais (float impuestos, float poblacion, float dinero, float salud, float educacion, float seguridad, float felicidad, float gastos )
         {
             this.impuestos = impuestos; 
             this.poblacion = poblacion;
@@ -28,28 +28,24 @@ namespace Gestion_Paises
             this.educacion = educacion;
             this.seguridad = seguridad;
             this.felicidad = felicidad;
-            this.gastos = gatos;
+            this.gastos = gastos;
 
         }
 
-        public void CalculateFactor()
-        {
-
+        public virtual void CalculateFactor()
+        {            
         }
 
-        public void Healt()
-        {
-
+        public virtual void Healt(float a)
+        {           
         }
 
-        public void Education()
+        public virtual void Education(float a)
         {
-
         }
 
-        public void Security()
+        public virtual void Security(float a)
         {
-
         }
 
     }
