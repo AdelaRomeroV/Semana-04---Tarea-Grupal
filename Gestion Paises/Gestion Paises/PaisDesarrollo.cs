@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Gestion_Paises
 {
-    internal class PaisEnDesarrollo
+    internal class PaisDesarrollo: Pais
     {
-        public PaisEnDesarrollo(string, float, float, float, float,float)
+        public PaisDesarrollo(string, float, float, float, float,float)
         {
 
         }
